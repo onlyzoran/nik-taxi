@@ -9,38 +9,37 @@ if (!empty($_POST)){
   $_POST  = multiDimensionalArrayMap('cleanData', $_POST);
 
   //your email adress 
-  $emailTo ="yourmail@yoursite.com"; //"yourmail@yoursite.com";
+  $emailTo ="onlyzoran@gmail.com"; //"yourmail@yoursite.com";
+  $emailTo1 ="ds@dsotnikov.ru"; //"yourmail@yoursite.com";
+
 
   //from email adress
-  $emailFrom ="contact@yoursite.com"; //"contact@yoursite.com";
+  $emailFrom ="mail@beznal-srazy.ru"; //"contact@yoursite.com";
 
   //email subject
-  $emailSubject = "Mail from Porta";
+  $emailSubject = "Заявка с сайта";
 
   $name = $_POST["name"];
-  $email = $_POST["email"];
-  $comment = $_POST["comment"];
+  $phone = $_POST["phone"];
+  $siteurl = $_POST["siteurl"];
+
   if($name == "")
    $data['success'] = false;
- 
- if (!preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", $email)) 
-   $data['success'] = false;
 
-
- if($comment == "")
+   if($phone == "")
    $data['success'] = false;
 
  if($data['success'] == true){
-
-  $message = "NAME: $name<br>
-  EMAIL: $email<br>
-  COMMENT: $comment";
+  $message = "Фамилия, имя: $name<br>
+  Телефон: $phone<br>
+  $siteurl<br>ss";
 
 
   $headers = "MIME-Version: 1.0" . "\r\n"; 
   $headers .= "Content-type:text/html; charset=utf-8" . "\r\n"; 
   $headers .= "From: <$emailFrom>" . "\r\n";
   mail($emailTo, $emailSubject, $message, $headers);
+  mail($emailTo1, $emailSubject, $message, $headers);
 
   $data['success'] = true;
   echo json_encode($data);

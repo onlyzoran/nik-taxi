@@ -206,12 +206,12 @@ $("#send-mail").click(function () {
             error = true; // change the error state to true
         }
 
-        var emailCompare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
-        var email = $('input#email').val().toLowerCase(); // get the value of the input field
-        if (email == "" || email == " " || !emailCompare.test(email)) {
-            $('#err-email').show(500);
-            $('#err-email').delay(4000);
-            $('#err-email').animate({
+        // var emailCompare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
+        var phone = $('input#phone').val().toLowerCase(); // get the value of the input field
+        if (phone == "" || phone == " ") {
+            $('#err-phone').show(500);
+            $('#err-phone').delay(4000);
+            $('#err-phone').animate({
                 height: 'toggle'
             }, 500, function () {
                 // Animation complete.
@@ -220,20 +220,20 @@ $("#send-mail").click(function () {
         }
 
 
-        var comment = $('textarea#comment').val(); // get the value of the input field
-        if (comment == "" || comment == " ") {
-            $('#err-comment').show(500);
-            $('#err-comment').delay(4000);
-            $('#err-comment').animate({
-                height: 'toggle'
-            }, 500, function () {
-                // Animation complete.
-            });
-            error = true; // change the error state to true
-        }
+        // var comment = $('textarea#comment').val(); // get the value of the input field
+        // if (comment == "" || comment == " ") {
+        //     $('#err-comment').show(500);
+        //     $('#err-comment').delay(4000);
+        //     $('#err-comment').animate({
+        //         height: 'toggle'
+        //     }, 500, function () {
+        //         // Animation complete.
+        //     });
+        //     error = true; // change the error state to true
+        // }
 
         if (error == false) {
-            var dataString = $('#contact-form').serialize(); // Collect data from form
+            var dataString = $('#contact-form').serialize() + '&siteurl=' + document.domain; // Collect data from form
             $.ajax({
                 type: "POST",
                 url: $('#contact-form').attr('action'),
@@ -247,8 +247,7 @@ $("#send-mail").click(function () {
                     if (response.success) {
                         $('#successSend').show();
                         $("#name").val('');
-                        $("#email").val('');
-                        $("#comment").val('');
+                        $("#phone").val('');
                     } else {
                         $('#errorSend').show();
                     }
