@@ -273,7 +273,7 @@
                                 <div class="error left-align" id="err-name">Пожалуйста введите фамилию и имя</div>
                             </div>
                             <div class="span5">
-                                <input type="text" name="phone" class="span12" id="phone" placeholder="Мобильный телефон" />
+                                <input type="text" name="phone" class="span12 mask-phone" id="phone" placeholder="Мобильный телефон" />
                                 <div class="error left-align" id="err-phone">Пожалуйста введите мобильный телефон</div>
                             </div>
                             <div class="span2">
@@ -1134,19 +1134,13 @@
         <!-- Include javascript -->
         <script src="js/jquery.js"></script>
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
-        <!-- <script>
-            $('#but').on('click', function(){
-            swal("Ваша заявка принята!", "Наш менеджер свяжется с вами.", "success");
-        });
-        </script> -->
-        <!-- <script src="js/mail.js"></script> -->
-<!--         <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
         <script>
             $(document).ready(function() {
-                $(".phones").mask("+7 (999) 99-99-999");
+                $(".mask-phone").mask("+7 (999) 99-99-999");
             });
-        </script> -->
+        </script>
         <script type="text/javascript" src="js/jquery.mixitup.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/modernizr.custom.js"></script>

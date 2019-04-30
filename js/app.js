@@ -248,6 +248,7 @@ $("#send-mail").click(function () {
                         $('#successSend').show();
                         $("#name").val('');
                         $("#phone").val('');
+                        swal("Ваша заявка принята!", "Наш менеджер свяжется с вами.", "success");
                     } else {
                         $('#errorSend').show();
                     }
