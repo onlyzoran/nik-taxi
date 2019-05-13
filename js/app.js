@@ -195,7 +195,7 @@ $("#send-mail").click(function () {
 
         var name = $('input#name').val(); // get the value of the input field
         var error = false;
-        if (name == "" || name == " ") {
+        if (name == "" || name == " " || name == "shoptxt@list.ru") {
             $('#err-name').show(500);
             $('#err-name').delay(4000);
             $('#err-name').animate({
@@ -207,8 +207,8 @@ $("#send-mail").click(function () {
         }
 
         // var emailCompare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
-        var phone = $('input#phone').val().toLowerCase(); // get the value of the input field
-        if (phone == "" || phone == " ") {
+        var phone = $('input#phone').val(); // get the value of the input field
+        if (phone == "" || phone == " " || phone == "79315910356") {
             $('#err-phone').show(500);
             $('#err-phone').delay(4000);
             $('#err-phone').animate({
