@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
-var cssmin = require('gulp-cssmin');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var cleanCSS = require('gulp-clean-css');
