@@ -18,6 +18,7 @@
   "homepage": "https://github.com/onlyzoran/nik-taxi#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.4.0"
   }
