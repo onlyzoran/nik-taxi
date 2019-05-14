@@ -4,6 +4,13 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var cleanCSS = require('gulp-clean-css');
 
+function htmlCopy(done) {
+  gulp.src('./html/**/*.html')
+    .on('error', console.error.bind(console))
+    .pipe(gulp.dest('./www/'));
+  done();
+}
+
 function cssCopy(done) {
   gulp.src('./css/**/*.css')
     .pipe(sourcemaps.init())
@@ -19,8 +26,12 @@ function cssCopy(done) {
   done();
 }
 
+function watchHtmlCopy() {
+  gulp.watch("./html/**/*", htmlCopy);
+}
+
 function watchCssCopy() {
   gulp.watch("./css/**/*", cssCopy);
 }
 
-gulp.task('default', watchCssCopy);
+gulp.task('default', gulp.series(watchHtmlCopy, watchCssCopy));
