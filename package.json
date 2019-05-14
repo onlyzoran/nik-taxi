@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/onlyzoran/nik-taxi/issues"
   },
-  "homepage": "https://github.com/onlyzoran/nik-taxi#readme"
+  "homepage": "https://github.com/onlyzoran/nik-taxi#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
