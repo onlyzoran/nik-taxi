@@ -6,6 +6,7 @@
  * Author URL: http://graphberry.com
  * License: http://graphberry.com/pages/license
  */
+ var noScrollingBefore = true;
  jQuery(document).ready(function ($) {
 
     var lastId,
@@ -69,7 +70,12 @@
 
     // Bind to scroll
     $(window).scroll(function () {
-
+        /*My*/
+        if (noScrollingBefore == true) {
+          $('.nav-collapse').collapse('hide');
+          noScrollingBefore = false;
+        }
+        /*End my*/
         //Display or hide scroll to top button
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
