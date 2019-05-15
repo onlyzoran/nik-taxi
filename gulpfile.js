@@ -28,6 +28,13 @@ function cssCopy(done) {
   done();
 }
 
+function jsCopy(done) {
+  gulp.src('./js/**/*.js')
+    .on('error', console.error.bind(console))
+    .pipe(gulp.dest('./www/js/'));
+  done();
+}
+
 function watchHtmlCopy() {
   gulp.watch("./html/**/*", htmlCopy);
 }
@@ -36,4 +43,8 @@ function watchCssCopy() {
   gulp.watch("./css/**/*", cssCopy);
 }
 
-gulp.task('default', gulp.parallel(watchCssCopy, watchHtmlCopy));
+function watchJsCopy() {
+  gulp.watch("./js/**/*", jsCopy);
+}
+
+gulp.task('default', gulp.parallel(watchHtmlCopy, watchCssCopy, watchJsCopy));
