@@ -849,8 +849,9 @@
   }
   /*My*/
   .span-xs-6 {
+    margin: 0 1px !important;
     float: left !important;
-    width: 50% !important;
+    width: 48% !important;
   }
   /*End my*/
   .span12,

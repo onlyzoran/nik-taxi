@@ -417,7 +417,7 @@ p {
 }
 .service img {
     width:150px;
-    height:150px;
+    /*height:150px; My block*/
 }
 /*
 3.2 Portfolio
