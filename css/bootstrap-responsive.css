@@ -847,6 +847,12 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+  /*My*/
+  .span-xs-6 {
+    float: left !important;
+    width: 50% !important;
+  }
+  /*End my*/
   .span12,
   .row-fluid .span12 {
     width: 100%;

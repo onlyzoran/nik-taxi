@@ -36,4 +36,4 @@ function watchCssCopy() {
   gulp.watch("./css/**/*", cssCopy);
 }
 
-gulp.task('default', gulp.series(watchHtmlCopy, watchCssCopy));
+gulp.task('default', gulp.parallel(watchCssCopy, watchHtmlCopy));
