@@ -75,6 +75,10 @@
           $('.nav-collapse').collapse('hide');
           noScrollingBefore = false;
         }
+        if ($(this).scrollTop() < 10) {
+            $('.nav-collapse').collapse('show');
+            noScrollingBefore = true;
+        }
         /*End my*/
         //Display or hide scroll to top button
         if ($(this).scrollTop() > 100) {
