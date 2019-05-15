@@ -4,6 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var cleanCSS = require('gulp-clean-css');
 var decomment = require('gulp-decomment');
+var uglify = require('gulp-uglify');
 
 function htmlCopy(done) {
   gulp.src('./html/**/*.html')
@@ -29,7 +30,12 @@ function cssCopy(done) {
 }
 
 function jsCopy(done) {
-  gulp.src('./js/**/*.js')
+  gulp.src(['./js/**/*.js', '!./js/**/*.min.js'])
+    .on('error', console.error.bind(console))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./www/js/'));
+  gulp.src('./js/**/*.min.js')
     .on('error', console.error.bind(console))
     .pipe(gulp.dest('./www/js/'));
   done();
