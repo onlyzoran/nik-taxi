@@ -113,12 +113,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557980541267</updated>
-      <workItem from="1557980549012" duration="828000" />
+      <workItem from="1557980549012" duration="1260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="828000" />
+    <option name="totallyTimeSpent" value="1260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -201,7 +201,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/gulp-js" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -227,12 +227,22 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="origin/gulp-js" />
+                  <option value="HEAD" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/gulp-js" />
                 </option>
               </RecentGroup>
               <RecentGroup>
