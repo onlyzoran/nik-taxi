@@ -46,7 +46,7 @@
                     <h1>Экспресс-подключение к UBER, GETT, Ситимобил и Яндекс такси</h1>
                 </div>
                 <div class="row-fluid">
-                    <div class="span3">
+                    <div class="span3 span-xs-6">
                         <div class="centered service">
                             <div class="zoom-in">
                                 <img src="img/uber.svg" alt="taxi 1">
@@ -54,7 +54,7 @@
                             <h3>Uber</h3>
                         </div>
                     </div>
-                    <div class="span3">
+                    <div class="span3 span-xs-6">
                         <div class="centered service">
                             <div class="zoom-in">
                                 <img src="img/gett.svg" alt="taxi 2">
@@ -62,7 +62,7 @@
                             <h3>Gett</h3>
                         </div>
                     </div>
-                    <div class="span3">
+                    <div class="span3 span-xs-6">
                         <div class="centered service">
                             <div class="zoom-in">
                                 <img src="img/citymobil_orange.svg" alt="taxi 3" />
@@ -70,7 +70,7 @@
                             <h3>Ситимобил</h3>
                         </div>
                     </div>
-                    <div class="span3">
+                    <div class="span3 span-xs-6">
                         <div class="centered service">
                             <div class="zoom-in">
                                 <img src="img/yataxi.png" alt="taxi 4">
@@ -228,23 +228,24 @@
                 <i class="icon-up-open"></i>
             </a>
         </div>
-        <script src="js/jquery.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/sweetalert.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
         <script>
             $(document).ready(function() {
-              $(".btn-navbar").click();
+              // $(".btn-navbar").click();
+              $('.nav-collapse').collapse('show');
               $(".mask-phone").mask("+7 (999) 99-99-999");
             });
         </script>
-        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/modernizr.custom.js"></script>
-        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-        <script type="text/javascript" src="js/jquery.cslider.js"></script>
-        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
-        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.min.js"></script>
         <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/app.min.js"></script>
     </body>
 </html>
