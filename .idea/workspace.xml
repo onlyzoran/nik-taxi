@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95dbc067-149f-4548-becd-dd6efbd1bbb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="95dbc067-149f-4548-becd-dd6efbd1bbb7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +169,7 @@
       <workItem from="1557983921625" duration="5359000" />
       <workItem from="1557999720805" duration="90000" />
       <workItem from="1558009683700" duration="312000" />
+      <workItem from="1558530131197" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="Divide tariff section to two section">
       <created>1557984790845</created>
@@ -227,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7652000" />
+    <option name="totallyTimeSpent" value="7989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -240,11 +237,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.797054" visible="true" weight="0.18835099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79541737" visible="true" weight="0.18835099" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.24962178" />
-      <window_info id="Gulp" order="2" sideWeight="0.20294599" side_tool="true" visible="true" weight="0.18835099" />
+      <window_info id="Gulp" order="2" sideWeight="0.20458265" side_tool="true" visible="true" weight="0.18835099" />
       <window_info id="npm" order="3" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
       <window_info id="Favorites" order="4" sideWeight="0.5008183" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
